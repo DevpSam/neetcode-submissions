@@ -1,5 +1,4 @@
 class Solution {
-    // Helper method to swap elements in the array
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
@@ -31,8 +30,6 @@ class Solution {
     public int findKthLargest(int[] nums, int k) {
         int l = 0;
         int r = nums.length - 1;
-        // The k-th largest element will be at index (k - 1) 
-        // if we sort the partition in descending order.
         int targetIdx = k - 1; 
         
         while (l <= r) {
